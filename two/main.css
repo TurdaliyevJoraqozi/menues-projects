@@ -1,0 +1,95 @@
+.box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.lines:hover .lines__line--1 {
+  top: 20px;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.lines:hover .lines__line--2 {
+  width: 0px;
+  opacity: 0;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.lines:hover .lines__line--3 {
+  top: 20px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.lines:hover .end {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  opacity: 0;
+}
+
+.lines:hover .end2 {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  opacity: 0;
+}
+
+.lines2:hover .lines__line--1 {
+  top: 20px;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.lines2:hover .ikki {
+  width: 0px;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  opacity: 0;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.lines2:hover .lines__line--3 {
+  top: 20px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.lines3:hover .lines3__line--1 {
+  top: 0;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.lines3:hover .lines3__line--2 {
+  width: 90px;
+  opacity: 1;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.lines3:hover .lines3__line--3 {
+  top: 52px;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+/*# sourceMappingURL=main.css.map */

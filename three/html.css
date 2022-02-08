@@ -1,0 +1,306 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
+}
+.buttons__button {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #09a0a0;
+}
+.buttons__button span,
+.buttons__button2 span,
+.buttons__button3 span {
+  color: aliceblue;
+  margin-top: 8px;
+}
+.buttons__button--a {
+  padding: 10px;
+  border-radius: 20px;
+  color: aliceblue;
+  background-color: crimson;
+  text-decoration: none;
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  margin-top: 100px;
+}
+.buttons__button--a:hover {
+  animation-name: btn_1;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
+@keyframes btn_1 {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+/* ------------btn2------------------------------------------------------------------------ */
+.buttons__button2 {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f3d00a;
+}
+.buttons__button2--a {
+  padding: 10px;
+  border-radius: 20px;
+  color: aliceblue;
+  background-color: rgb(9, 245, 9);
+  text-decoration: none;
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  position: relative;
+  margin-top: 100px;
+}
+.buttons__button2--a::after {
+  position: absolute;
+  width: 100%;
+  content: "";
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  z-index: -1;
+  opacity: 0.8;
+}
+.buttons__button2--a:hover::after {
+  animation-name: btn_2;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+}
+.buttons__button2--a::before {
+  position: absolute;
+  width: 100%;
+  content: "";
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  z-index: -1;
+  opacity: 0.8;
+  animation-name: btn_2;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+}
+@keyframes btn_2 {
+  0% {
+    transform: scale(1.6);
+    z-index: -1;
+  }
+  50% {
+    transform: scale(1);
+    z-index: -1;
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.6);
+    z-index: 1;
+  }
+}
+/* ------------btn3------------------------------------------------------------------------ */
+.buttons__button3 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #2533fc;
+}
+.buttons__button3--a {
+  padding: 10px;
+  border-radius: 20px;
+  color: aliceblue;
+  background-color: rgb(245, 9, 233);
+  text-decoration: none;
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  margin-top: 100px;
+}
+.buttons__button3--a:hover {
+  animation-name: btn_3;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+}
+@keyframes btn_3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* ------------btn4------------------------------------------------------------------------ */
+.buttons__button4 {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f30909;
+  position: relative;
+}
+.clicks {
+  position: relative;
+}
+.one {
+  color: #fff;
+  position: absolute;
+  transform: rotate(-20deg);
+  animation-name: one;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  font-size: 18px;
+  left: 20px;
+}
+@keyframes one {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.two {
+  color: #fff;
+  position: absolute;
+  transform: rotate(6deg);
+  animation-name: one;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.2s;
+  font-size: 18px;
+  left: 290px;
+}
+.three {
+  color: #fff;
+  position: absolute;
+
+  animation-name: one;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.7s;
+  font-size: 18px;
+  left: 20px;
+  top: -70px;
+}
+
+.four {
+  color: rgb(4, 29, 4);
+  position: absolute;
+  font-size: 18px;
+  left: 150px;
+  top: 0px;
+  opacity: 0;
+}
+
+@keyframes four {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-16px);
+    font-size: 20px;
+  }
+  100% {
+    transform: translateY(-60px);
+    opacity: 0.8;
+    font-size: 22px;
+  }
+}
+.buttons__button4 span {
+  color: aliceblue;
+  margin-top: 8px;
+}
+.buttons__button4--a {
+  padding: 10px;
+  border-radius: 20px;
+  color: aliceblue;
+  background-color: rgb(212, 12, 252);
+  text-decoration: none;
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  margin-top: 100px;
+}
+.buttons__button4--a:hover {
+  animation-name: btn_4;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
+/* ------------btn5------------------------------------------------------------------------ */
+.buttons__button5 {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #a05209;
+}
+.buttons__button5 span {
+  color: aliceblue;
+  margin-top: 8px;
+}
+.buttons__button5--a {
+  padding: 10px;
+  border-radius: 20px;
+  color: rgb(240, 255, 240);
+  background-color: rgb(21, 219, 226);
+  text-decoration: none;
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  margin-top: 100px;
+}
+
+/* ------------btn6------------------------------------------------------------------------ */
+.buttons__button6 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #ff06ff;
+}
+.buttons__button6 span {
+  color: aliceblue;
+  margin-top: 8px;
+}
+.buttons__button6--a {
+  padding: 10px;
+  border-radius: 20px;
+  color: rgb(255, 4, 4);
+  background-color: rgb(20, 220, 170);
+  text-decoration: none;
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  margin-top: 100px;
+}

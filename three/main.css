@@ -1,0 +1,101 @@
+.buttons__button4:hover .four {
+  -webkit-animation-name: four;
+          animation-name: four;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.button__button5--img {
+  position: absolute;
+  right: 30px;
+  -webkit-animation-name: barmoq;
+          animation-name: barmoq;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes barmoq {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes barmoq {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.button__button5--img img {
+  width: 40px;
+  height: 60px;
+}
+
+.images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  opacity: 0;
+}
+
+.images img {
+  width: 25px;
+  height: 25px;
+}
+
+.buttons__button6:hover .images {
+  -webkit-animation-name: yuz;
+          animation-name: yuz;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes yuz {
+  0% {
+    opacity: 0.5;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+  }
+}
+
+@keyframes yuz {
+  0% {
+    opacity: 0.5;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+  }
+}
+/*# sourceMappingURL=main.css.map */
